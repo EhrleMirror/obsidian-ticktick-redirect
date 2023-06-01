@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TickTick Authorization</title>
+    <script>
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const code = urlParams.get('code');
+            document.getElementById('code').innerText = code;
+        }
+    </script>
+</head>
+<body>
+    <h1>TickTick Authorization</h1>
+    <p>Your authorization code is: <span id="code"></span></p>
+</body>
+</html>
